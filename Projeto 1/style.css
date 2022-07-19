@@ -40,6 +40,10 @@ p, #footer {
   line-height: 28px;
 }
 
+#footer {
+  margin-bottom: 16px;
+}
+
 #footer a + a {
   margin-left: 28px;
 }
@@ -51,4 +55,10 @@ p, #footer {
   margin: 0 auto 8px;
 
   border: 1px #ECEFF2 solid;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
 }
