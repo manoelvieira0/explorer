@@ -21,7 +21,8 @@ Ele se divide em 10 níveis e dentro de cada um temos módulos de Land (Soft ski
 Dando início na trajetória, a Land 1 foi fundamental para o começo da Jornada, demonstrando técnicas e dicas essenciais
 para se relacionar de maneira mais eficiente, atribuindo a importância de uma ótima comunicação com outros devs e a criação de um networking.
 
-## 💻 No Stage 1 documentei uma série de aprendizados e assuntos básicos de programação. Neste nível foi abordado:
+## 💻 Stage 1 - Fundamentos da Programação WEB
+Documentei uma série de aprendizados e assuntos básicos de programação. Neste nível foi abordado:
 - O que é programação?
 - Lógica de programação
 - O que é e como funciona a Internet?
