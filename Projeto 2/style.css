@@ -1,13 +1,18 @@
 body {
+  min-height: 100vh;
+
   margin: 0;
 
   font-family: 'Open Sans', sans-serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 80%, rgba(227, 255, 248, 0.40) 100%);
 }
 
 .page {
   width: 1000px;
 
-  margin: 65px auto 0;
+  margin: 0 auto;
+  padding-top: 65px;
 }
 
 main {
@@ -93,7 +98,6 @@ button {
 
 button:hover {
   background-color: #54a88b;
-  transition: all;
 }
 
 footer {
@@ -103,8 +107,15 @@ footer {
   text-align: center;
 
   margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 footer a {
   font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
