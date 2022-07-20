@@ -10,6 +10,12 @@ body {
   margin: 65px auto 0;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -62,6 +68,8 @@ p {
 
   line-height: 28px;
 
+  margin: 40px 0;
+
   color: #7D7987;
 }
 
@@ -73,6 +81,9 @@ footer {
   font-size: 14px;
 
   line-height: 28px;
+  text-align: center;
+
+  margin-top: 80px;
 }
 
 footer a {
