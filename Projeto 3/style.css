@@ -237,6 +237,11 @@ footer {
 .button:hover {
   background-color: #05a54d;
 
+  cursor: pointer;
+
   transition: 0.1s;
 }
 
+input:invalid {
+  border: 1px solid #FF1010;
+}
