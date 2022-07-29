@@ -1,0 +1,196 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+}
+
+body:before {
+  content: '';
+
+  background-color: #535971;
+
+  width: 100%;
+  height: 436px;
+
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 364px;
+
+  margin-top: 140px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  color: #FFFFFF;
+  font-size: 48px;
+
+  margin-bottom: 18px;
+}
+
+header p {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+form {
+  background-color: #FFFFFF;
+
+  padding: 64px;
+
+  min-height: 300px;
+
+  border-radius: 20px 20px 0px 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  border-bottom: 1px solid #E6E6F0;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+  color: #535971;
+}
+
+label {
+  font-size: 16px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  gap: 22px;
+
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  color: #4E4958;
+}
+
+#mentoria-date {
+  width: 300px;
+}
+
+.colunas {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.colunas:first-child {
+  width: 300px;
+}
+
+fieldset input {
+  height: 56px;
+
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+fieldset input:focus,
+fieldset input {
+  padding: 0 24px;
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+fieldset span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #77757a;
+  margin-left: 9px;
+}
+
+fieldset h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+}
+
+.fieldset-wrapper .mentorias {
+  gap: 0;
+}
+
+footer {
+  height: 160px;
+
+  background-color: #535971;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 71px;
+
+  margin-bottom: 100px;
+
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0 0 8px 8px;
+}
+
+footer button {
+  height: 56px;
+  width: 608px;
+
+  background-color: #FF5374;
+  border-radius: 20px;
+  border: 0;
+
+  align-items: center;
+
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: white;
+}
+
+footer button:hover {
+  background-color: #df4967;
+
+  cursor: pointer;
+
+  transition: 0.1s;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
+}
