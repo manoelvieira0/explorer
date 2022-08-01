@@ -112,3 +112,36 @@ main {
   padding: 0 1.6rem;
   height: 3.8rem;
 }
+
+header {
+  animation-name: topdown;
+  animation-duration: 700ms;
+}
+
+main {
+  animation: downtop 700ms 350ms backwards;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
