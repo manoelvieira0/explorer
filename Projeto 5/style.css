@@ -24,6 +24,16 @@ body {
   font-size: var(--fs-body);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.page {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
 header {
   margin: 10rem 0  8rem;
 
