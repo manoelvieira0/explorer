@@ -9,14 +9,16 @@ ul {
 }
 
 :root {
-  font-size: 62.5%; /* 10px */;
+  font-size: 62.5%;
+  /* 10px */
+  ;
 }
 
 body {
   background: #ECE9FD;
 
   padding: 6.0rem 2.3rem 6.6rem;
-  
+
   font-size: 1.6rem;
   font-family: 'Epilogue', sans-serif;
 }
@@ -45,7 +47,7 @@ main p:first-child {
   margin-bottom: 1.7rem;
 }
 
-main h1 + p {
+main h1+p {
   color: rgba(10, 0, 57, 0.64);
   line-height: 3.2rem;
 
@@ -92,4 +94,38 @@ ul li span {
 
 ul li:first-child {
   gap: 3.8rem;
+}
+
+ul li + li {
+  margin-top: 3.2rem;
+}
+
+@media (min-width: 735px) {
+  body {
+    padding: 8.0rem; 
+  }
+
+  main {
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+  }
+
+  main > div {
+    max-width: 484px;
+  }
+
+  ul li{
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
+  ul li:first-child {
+    gap: 6.4rem;
+  }
+
+  ul li + li {
+    margin-top: 3.2rem;
+  }
 }
