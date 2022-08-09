@@ -28,3 +28,44 @@ Documentei uma série de aprendizados e assuntos básicos de programação. Nest
 - O que é e como funciona a Internet?
 - Front-end vs Back-end
 👩🏽‍💻 (o que acontece por debaixo dos panos quando você acessa um site na internet?)
+<br>
+
+## 👨🏽‍🎓 Land 2 - Objetivos e Planejamentos
+Foi abordado a importância de se ter um propósito de vida, a necessidade de fortalece-lo dia após dia e a traçar metas e objetivos (Método S.M.A.R.T).
+
+## 💻 Stage 2 - Introdução ao HTML e CSS
+Desenvolvi 3 projetos práticos:
+
+- Móveis Customizados 🛋
+
+![1658339056968](https://user-images.githubusercontent.com/76048368/183715729-375d71f9-f667-4a82-8a55-0074041c9679.jpg)
+- Treine.me 💪🏽
+
+![1658339056953](https://user-images.githubusercontent.com/76048368/183715744-45afc88b-39cf-4587-80b2-ccad4e5fb5a2.jpg)
+- Rocket.sect 🔐
+
+![1658339056945](https://user-images.githubusercontent.com/76048368/183715756-d72e5908-17be-4e57-afd7-206699f67498.jpg)
+
+Obtive diversos aprendizados durante o desenvolvimento destes projetos, como:
+
+- Utilização da ferramenta Figma;
+- Estrutura Inicial do HTML e CSS;
+- Utilização de fontes e cores personalizadas;
+- Personalização de textos, fontes e cores;
+- Espaçamento e posicionamento de elementos;
+- Margin e Padding;
+- Tags semânticas;
+- Conceito de Box Model;
+- Como utilizar Flexbox;
+- Acessibilidade;
+- Aplicar background e customizar botões.
+<br>
+
+👩🏽‍💻 Resolvi alguns desafios durante este nível:
+
+-Corrigindo Bugs (Projeto 01 e Projeto 02);
+- Semântica e Acessibilidade (Aplicar semântica e acessibilidade no Projeto 2);
+- Recriando Layout (Desenvolvimento do Zero do Projeto 3).
+
+
+
