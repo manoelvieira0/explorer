@@ -1,4 +1,8 @@
-// aqui criamos um Array shoppingList
-const shoppingList = [
-  "leite", "ovos", "chocolate", 2, 3,
+
+const animals = [
+  'dog',
+  'cat',
+  'monkey',
 ]
+
+console.log(animals[0]);
