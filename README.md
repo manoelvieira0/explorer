@@ -67,5 +67,35 @@ Obtive diversos aprendizados durante o desenvolvimento destes projetos, como:
 - Semântica e Acessibilidade (Aplicar semântica e acessibilidade no Projeto 2);
 - Recriando Layout (Desenvolvimento do Zero do Projeto 3).
 
+## 👨🏽‍🎓 Land 3 - Aprendizado, Estudos e Técnicas
+Foi abordado como potencializar o aprendizado durante toda jornada, criando um plano de estudos personalizado, entendendo formas e técnicas essenciais para a aceleração e evolução, como a técnica Pomodoro.
+
+## 💻 Stage 3 - Avançando no HTML e CSS
+Desenvolvi 3 projetos práticos:
+
+- Form Eventos 📖
+- Mobile e Web 📱
+- Grid Trabalhos 📔
+
+Obtive diversos aprendizados durante o desenvolvimento destes projetos, como:
+
+- Trabalhar com inputs no HTML;
+- Entender o funcionamento dos formulários na Web;
+- Saber diferenciar os métodos GET e POST;
+- Configurar o Live server no VS Code;
+- Trabalhar com pseudo-elements no CSS;
+- Validar campos de formulários;
+- Saber sobre a regra mobile-first;
+- Aplicar unidades de medidas relativas;
+- Utilizar breakpoints @media ;
+- Utilizar variáveis no CSS;
+- Aplicar cores utilizando HSL;
+- Utilizar transições e transformações no CSS;
+- Utilizar animações no CSS;
+- Saber utilizar corretamente Grid Layout;
+- Aplicar filtros em imagens no CSS;
+- Utilização da função clamp no CSS;
+<br>
+
 
 
