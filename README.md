@@ -74,8 +74,16 @@ Foi abordado como potencializar o aprendizado durante toda jornada, criando um p
 Desenvolvi 3 projetos práticos:
 
 - Form Eventos 📖
+
+![evento](https://user-images.githubusercontent.com/76048368/184180972-a3404a93-6a35-4d25-9cae-57fdee03af72.png)
 - Mobile e Web 📱
+
+![mobile](https://user-images.githubusercontent.com/76048368/184180960-77990153-895d-494d-86cf-fbd704965893.png)
+![mobile_web](https://user-images.githubusercontent.com/76048368/184180965-ea448b61-1c61-43f7-9e6b-d4505b5d4088.png)
 - Grid Trabalhos 📔
+
+![trabalhos_mobile](https://user-images.githubusercontent.com/76048368/184180966-b6d14dd2-2014-4659-a597-6fa37c5aad65.png)
+![trabalhos_web](https://user-images.githubusercontent.com/76048368/184180970-f19d7db3-99e3-42b9-925a-5c06feea4ac4.png)
 
 Obtive diversos aprendizados durante o desenvolvimento destes projetos, como:
 
