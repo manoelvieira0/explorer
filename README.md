@@ -28,3 +28,82 @@ Documentei uma série de aprendizados e assuntos básicos de programação. Nest
 - O que é e como funciona a Internet?
 - Front-end vs Back-end
 👩🏽‍💻 (o que acontece por debaixo dos panos quando você acessa um site na internet?)
+<br>
+
+## 👨🏽‍🎓 Land 2 - Objetivos e Planejamentos
+Foi abordado a importância de se ter um propósito de vida, a necessidade de fortalece-lo dia após dia e a traçar metas e objetivos (Método S.M.A.R.T).
+
+## 💻 Stage 2 - Introdução ao HTML e CSS
+Desenvolvi 3 projetos práticos:
+
+- Móveis Customizados 🛋
+
+![1658339056968](https://user-images.githubusercontent.com/76048368/183715729-375d71f9-f667-4a82-8a55-0074041c9679.jpg)
+- Treine.me 💪🏽
+
+![1658339056953](https://user-images.githubusercontent.com/76048368/183715744-45afc88b-39cf-4587-80b2-ccad4e5fb5a2.jpg)
+- Rocket.sect 🔐
+
+![1658339056945](https://user-images.githubusercontent.com/76048368/183715756-d72e5908-17be-4e57-afd7-206699f67498.jpg)
+
+Obtive diversos aprendizados durante o desenvolvimento destes projetos, como:
+
+- Utilização da ferramenta Figma;
+- Estrutura Inicial do HTML e CSS;
+- Utilização de fontes e cores personalizadas;
+- Personalização de textos, fontes e cores;
+- Espaçamento e posicionamento de elementos;
+- Margin e Padding;
+- Tags semânticas;
+- Conceito de Box Model;
+- Como utilizar Flexbox;
+- Acessibilidade;
+- Aplicar background e customizar botões.
+<br>
+
+👩🏽‍💻 Resolvi alguns desafios durante este nível:
+
+-Corrigindo Bugs (Projeto 01 e Projeto 02);
+- Semântica e Acessibilidade (Aplicar semântica e acessibilidade no Projeto 2);
+- Recriando Layout (Desenvolvimento do Zero do Projeto 3).
+
+## 👨🏽‍🎓 Land 3 - Aprendizado, Estudos e Técnicas
+Foi abordado como potencializar o aprendizado durante toda jornada, criando um plano de estudos personalizado, entendendo formas e técnicas essenciais para a aceleração e evolução, como a técnica Pomodoro.
+
+## 💻 Stage 3 - Avançando no HTML e CSS
+Desenvolvi 3 projetos práticos:
+
+- Form Eventos 📖
+
+![evento](https://user-images.githubusercontent.com/76048368/184180972-a3404a93-6a35-4d25-9cae-57fdee03af72.png)
+- Mobile e Web 📱
+
+![mobile](https://user-images.githubusercontent.com/76048368/184180960-77990153-895d-494d-86cf-fbd704965893.png)
+![mobile_web](https://user-images.githubusercontent.com/76048368/184180965-ea448b61-1c61-43f7-9e6b-d4505b5d4088.png)
+- Grid Trabalhos 📔
+
+![trabalhos_mobile](https://user-images.githubusercontent.com/76048368/184180966-b6d14dd2-2014-4659-a597-6fa37c5aad65.png)
+![trabalhos_web](https://user-images.githubusercontent.com/76048368/184180970-f19d7db3-99e3-42b9-925a-5c06feea4ac4.png)
+
+Obtive diversos aprendizados durante o desenvolvimento destes projetos, como:
+
+- Trabalhar com inputs no HTML;
+- Entender o funcionamento dos formulários na Web;
+- Saber diferenciar os métodos GET e POST;
+- Configurar o Live server no VS Code;
+- Trabalhar com pseudo-elements no CSS;
+- Validar campos de formulários;
+- Saber sobre a regra mobile-first;
+- Aplicar unidades de medidas relativas;
+- Utilizar breakpoints @media ;
+- Utilizar variáveis no CSS;
+- Aplicar cores utilizando HSL;
+- Utilizar transições e transformações no CSS;
+- Utilizar animações no CSS;
+- Saber utilizar corretamente Grid Layout;
+- Aplicar filtros em imagens no CSS;
+- Utilização da função clamp no CSS;
+<br>
+
+
+
