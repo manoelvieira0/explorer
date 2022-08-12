@@ -8,4 +8,4 @@ const animals = [
   'monkey',
 ]
 
-console.log(animals[1].name);
+console.log(animals[1]);
