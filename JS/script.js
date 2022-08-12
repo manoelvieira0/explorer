@@ -1,17 +1,29 @@
 /*
-  Capture 10 items para compor a lista de um supermercado.
-  
-  Após capturar os 10 items, imprima-os, separando por vírgula.
+  ** Jogo da advinhação **
+
+  Apresente a mensagem ao usuário:
+  "Advinhe o número que estou pensando? Está entre 0 e 10"
+
+  Crie um lógica para gerar um número aleatório 
+  e verificar se o número digitado é o mesmo que o aleatório gerado pelo sistema.
+
+  Enquanto o usuário não adivinhar o número, mostrar a mensagem:
+  "Erro, tente novamente:"
+
+  Caso o usuário acerte o número, apresentar a mensagem:
+  "Parabéns! Você advinhou o número em x tentativas"
+
+  Substitua o "x" da mensagem, pelo número de tentativas
 */
 
-let items = []
+let result = prompt("Advinhe o número que estou pensando? Está entre 0 e 10")
+const randomNumber = Math.round(Math.random() * 10) 
 
-for(let item = 0; item < 10; item++){
-  let itemName = prompt('Digite o item ' + (item + 1))
+let tentativas = 0
 
-  items[item] = itemName
+while(Number(result) != randomNumber){
+  result = prompt("Erro, tente novamente: ")
+  tentativas++
 }
 
-alert(items)
-
-
+alert(`Parabéns! Você advinhou o número em ${tentativas} tentativas`)
