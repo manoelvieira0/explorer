@@ -1,18 +1,12 @@
-[] Como controlar o fluxo da aplicação
-[] Estrutura de repetição while
-[] Gerar número aleatório utilizando Math()
+- Quais os dados de entrada que terei? (inputs)
+- Quais as variáveis?
+- Qual o caminho ideal? (fluxo ideal)
+- Qual(is) o(s) caminho(s) alternativo(s)? (fluxo alternativo)
+- Quais tratamentos de dados preciso fazer? (estrutura de dados, funções)
+- Qual é a saída, ou quais os dados de saída, esperada? (outputs)
 
-- Pacote com funcionalidades matemáticas
-  - Math.random()
-  - Math.round() 
-  - Math.ceil() 
-  - Math.floor()
-  
-[] Tipo de dado: 
-- NaN não é um número
-[] Tipo de erro: SyntaxError
-- erro de sintaxe; erro de escrita de código
-[] console
-- Pacote com funcionalidades para o console do devtools (browser)
-[] template literals ou template strings
-interpolação de dados
+Ferramentas da linguagem que abordaremos
+[] loop while
+[] arrays e funções de arrays
+[] condicional if/else
+[] template literals (strings)

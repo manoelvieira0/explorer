@@ -1,29 +1,54 @@
 /*
-  ** Jogo da advinhação **
 
-  Apresente a mensagem ao usuário:
-  "Advinhe o número que estou pensando? Está entre 0 e 10"
+  Faça um programa que tenha um menu e apresente a seguinte mensagem:
+  
+  Olá usuário! Digite o número da opção desejada
 
-  Crie um lógica para gerar um número aleatório 
-  e verificar se o número digitado é o mesmo que o aleatório gerado pelo sistema.
+    1. Cadastrar um item na lista
+    2. Mostrar itens cadastrados
+    3. Sair do programa
+  
+  --- 
+  O programa deverá capturar o número digitado pelo usuário e mostrar o seguintes cenários:
 
-  Enquanto o usuário não adivinhar o número, mostrar a mensagem:
-  "Erro, tente novamente:"
+  Caso o usuário digite 1, ele poderá cadastrar um item em uma lista
+  Caso o usuário digite 2, ele poderá ver os itens cadastrados
+    Se não houver nenhum item cadastrado, mostrar a mensagem: 
+      "Não existem itens cadastrados"
+  Caso o usuário digite 3, a aplicação deverá ser encerrada.
 
-  Caso o usuário acerte o número, apresentar a mensagem:
-  "Parabéns! Você advinhou o número em x tentativas"
-
-  Substitua o "x" da mensagem, pelo número de tentativas
 */
 
-let result = prompt("Advinhe o número que estou pensando? Está entre 0 e 10")
-const randomNumber = Math.round(Math.random() * 10) 
+let option
+let items = []
 
-let tentativas = 0
+while (option != 3) {
 
-while(Number(result) != randomNumber){
-  result = prompt("Erro, tente novamente: ")
-  tentativas++
+  option = Number(prompt(`
+  Olá Usuário! Digite o número da opção desejada:
+  
+    1. Cadastrar um item na lista
+    2. Mostrar itens cadastrados
+    3. Sair do programa
+  `))
+
+  if (option == 1) {
+    items[0] = prompt('Digite o nome do item: ')
+  }
+
+  else if (option == 2) {
+
+    if (items.length == 0) {
+      alert('Não existem itens cadastrados')
+    } else {
+      alert(items)
+    }
+
+  } else {
+    alert('Tchau')
+  }
+
+  console.log(items)
+  console.log(option)
 }
 
-alert(`Parabéns! Você advinhou o número em ${tentativas} tentativas`)
