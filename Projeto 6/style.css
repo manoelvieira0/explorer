@@ -20,6 +20,21 @@ body {
   color: var(--text-color);
 
   font-family: 'Roboto', sans-serif;
+  
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  justify-self: center;
+  align-self: end;
+}
+
+footer {
+  justify-self: end;
+  align-self: end;
+
+  padding: 0 4rem 3.2rem 0;
 }
 
 button {
@@ -45,6 +60,8 @@ button svg {
   font-size: clamp(4rem, 4rem + 12vw, 8.8rem);
 
   display: flex;
+
+  margin-bottom: 1.6rem;
 }
 
 #controls {
