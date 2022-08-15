@@ -1,49 +1,38 @@
-/* 
-  Dada uma lista de pacientes, descubra o IMC de cada paciente e imprima
+/*
 
-  "Paciente X possui o IMC de: Y"
+Nesse desafio, você irá solicitar ao usuário que ele insira 
+dois números e, a partir daí, calcular:
 
-  Onde X é o nome do paciente e Y é o IMC desse paciente
+- [ ]  A soma dos dois números;
+- [ ]  A subtração dos dois números;
+- [ ]  A multiplicação dos dois números;
+- [ ]  A divisão dos dois números;
+- [ ]  O resto da divisão dos dois números;
 
-  Crie uma função para fazer o cálculo de IMC
+- [ ]  Verifique se a soma dos dois números é par (ou ímpar);
+- [ ]  Verifique se os dois números inseridos são iguais (ou diferentes).
+
 */
 
-/* peso / (altura * altura) */
+alert('Insira dois números a seguir: ')
+const numberOne = Number(prompt('Insira o primeiro número: '))
+const numberTwo = Number(prompt('Insira o segundo número: '))
 
-const patients = [
-  {
-    name: "Luiz",
-    age: 20,
-    weight: 100,
-    height: 190
-  },
-  {
-    name: "Alexandra",
-    age: 27,
-    weight: 70,
-    height: 170
-  },
-  {
-    name: "Carlos",
-    age: 42,
-    weight: 90,
-    height: 180
-  },
-]
+alert(`A soma dos dois números é: ${numberOne + numberTwo}`)
+alert(`A subtração dos dois números é: ${numberOne - numberTwo}`)
+alert(`A multiplicação dos dois números é: ${numberOne * numberTwo}`)
+alert(`A divisão dos dois números é: ${numberOne / numberTwo}`)
+alert(`o resto da divisão dos dois números é: ${numberOne % numberTwo}`)
 
-function IMC(weight, height){
-  return (weight / ((height / 100) ** 2)).toFixed(2)
+const sum = numberOne + numberTwo
+if (sum % 2 == 0) {
+  alert('A soma dos dois números é par!')
+} else {
+  alert('A soma dos dois números é impar!')
 }
 
-function printPatientIMC(patient){
-  return`
-  Paciente ${patient.name} possui o IMC de: 
-  ${IMC(patient.weight, patient.height)}
-`
+if(numberOne == numberTwo) {
+  alert('Os dois números inseridos são iguais')
+} else {
+  alert('Os dois números inseridos são diferentes')
 }
-
-for(let patient of patients){
-  let IMCmessage = printPatientIMC(patient)
-  alert(IMCmessage)
-}
-
