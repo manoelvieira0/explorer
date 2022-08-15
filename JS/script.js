@@ -1,38 +1,53 @@
 /*
+Nesse desafio você irá criar uma lista de estudantes e, 
+cada estudante dentro dessa lista, deverá conter os seguintes dados:
 
-Nesse desafio, você irá solicitar ao usuário que ele insira 
-dois números e, a partir daí, calcular:
+- nome;
+- nota da primeira prova;
+- nota da segunda prova.
 
-- [ ]  A soma dos dois números;
-- [ ]  A subtração dos dois números;
-- [ ]  A multiplicação dos dois números;
-- [ ]  A divisão dos dois números;
-- [ ]  O resto da divisão dos dois números;
+Depois de criada a lista:
 
-- [ ]  Verifique se a soma dos dois números é par (ou ímpar);
-- [ ]  Verifique se os dois números inseridos são iguais (ou diferentes).
-
+- [ ]  Crie uma função que irá calcular a média das notas de cada aluno;
+- [ ]  Supondo que a média, para esse concurso é 7, verifique se cada aluno 
+obteve sucesso ou não em entrar no concurso e mostre uma mensagem na tela.
 */
 
-alert('Insira dois números a seguir: ')
-const numberOne = Number(prompt('Insira o primeiro número: '))
-const numberTwo = Number(prompt('Insira o segundo número: '))
+const students = [
+  {
+    name: 'Méssia',
+    noteOne: 7,
+    noteTwo: 9,
+  },
+  {
+    name: 'Manoel',
+    noteOne: 3,
+    noteTwo: 8,
+  },
+  {
+    name: 'Adrielly',
+    noteOne: 10,
+    noteTwo: 8,
+  },
+]
 
-alert(`A soma dos dois números é: ${numberOne + numberTwo}`)
-alert(`A subtração dos dois números é: ${numberOne - numberTwo}`)
-alert(`A multiplicação dos dois números é: ${numberOne * numberTwo}`)
-alert(`A divisão dos dois números é: ${numberOne / numberTwo}`)
-alert(`o resto da divisão dos dois números é: ${numberOne % numberTwo}`)
-
-const sum = numberOne + numberTwo
-if (sum % 2 == 0) {
-  alert('A soma dos dois números é par!')
-} else {
-  alert('A soma dos dois números é impar!')
+function media(firstnote, secondnote){
+  return (firstnote + secondnote) / 2
 }
 
-if(numberOne == numberTwo) {
-  alert('Os dois números inseridos são iguais')
-} else {
-  alert('Os dois números inseridos são diferentes')
+function aproved(student){
+  if(media(student.noteOne, student.noteTwo) >= 7){
+    return `Parabéns, ${student.name}! Você foi aprovado(a) no concurso!`
+  } else {
+    return `Não foi dessa vez, ${student.name}! Tente novamente!`
+  }
 }
+
+for(let student of students){
+  alert(`
+  A média do(a) aluno(a) ${student.name} é: ${media(student.noteOne, student.noteTwo)}
+  ${aproved(student)}
+  `)
+}
+
+
