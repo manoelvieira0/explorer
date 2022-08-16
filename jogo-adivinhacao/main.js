@@ -3,8 +3,14 @@ let attempts = 1
 
 const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
+const btnTry = document.querySelector('#btnTry')
+const btnReset = document.querySelector('#btnReset')
 
-// Função CallBack
+// Eventos
+btnTry.addEventListener('click', handleTryClick)
+btnReset.addEventListener('click', handleResetClick)
+
+// Funções 
 function handleTryClick(event) {
   event.preventDefault()
 
@@ -14,7 +20,7 @@ function handleTryClick(event) {
     screen1.classList.add('hide')
     screen2.classList.remove('hide')
 
-    document.querySelector('.screen2 h2').innerText =
+    screen2.querySelector('h2').innerText =
       `Você acertou em ${attempts} tentativas`
   }
 
@@ -23,13 +29,13 @@ function handleTryClick(event) {
 
 }
 
-// Eventos
-const btnTry = document.querySelector('#btnTry')
-const btnReset = document.querySelector('#btnReset')
-
-btnTry.addEventListener('click', handleTryClick)
-btnReset.addEventListener('click', function () {
-  screen1.classList.remove('hide')
-  screen2.classList.add('hide')
+function handleResetClick(){
+  toggleScreen()
   attempts = 1
-})
+}
+
+function toggleScreen(){
+  screen1.classList.toggle('hide')
+  screen2.classList.toggle('hide')
+}
+
