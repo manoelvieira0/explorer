@@ -12,9 +12,9 @@ form.onsubmit = function (event) {
   const weight = inputWeight.value
   const height = inputHeight.value
 
-  const showsAlertError = notANumber(weight) || notANumber(height)
+  const weightOrHeightIsNotANumber = notANumber(weight) || notANumber(height)
 
-  if (showsAlertError) {
+  if (weightOrHeightIsNotANumber) {
     AlertError.open()
     return;
   }
@@ -22,9 +22,12 @@ form.onsubmit = function (event) {
   AlertError.close()
 
   const result = IMC(weight, height)
+  displayResultMessage(result)
+}
+
+function displayResultMessage(result){
   const message = `Seu IMC é de ${result}`
 
   Modal.message.innerText = message
   Modal.open()
 }
-
