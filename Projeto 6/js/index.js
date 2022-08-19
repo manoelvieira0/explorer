@@ -1,3 +1,8 @@
+// EcmaScript - ES6 Modules
+
+import resetControlls from "./controls.js"
+import "./timer.js"
+
 const buttonPlay = document.querySelector('.play')
 const buttonPause = document.querySelector('.pause')
 const buttonStop = document.querySelector('.stop')
@@ -8,46 +13,6 @@ let timerTimeOut
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
 let minutes = Number(minutesDisplay.textContent)
-
-function resetControlls() {
-  buttonPlay.classList.remove('hide')
-  buttonPause.classList.add('hide')
-  buttonSet.classList.remove('hide')
-  buttonStop.classList.add('hide')
-}
-
-function updateTimerDisplay(minutes, seconds) {
-  secondsDisplay.textContent = String(seconds).padStart(2, "0")
-  minutesDisplay.textContent = String(minutes).padStart(2, "0")
-}
-
-function resetTimer(){
-  updateTimerDisplay(minutes, 0)
-  clearTimeout(timerTimeOut)
-}
-
-function countdown() {
-  timerTimeOut = setTimeout(function () {
-    let seconds = Number(secondsDisplay.textContent)
-    let minutes = Number(minutesDisplay.textContent)
-
-    updateTimerDisplay(minutes, 0)
-
-    if (minutes <= 0) {
-      resetControlls()
-      return
-    }
-
-    if (seconds <= 0) {
-      seconds = 60
-      --minutes
-    }
-
-    updateTimerDisplay(minutes, String(seconds - 1))
-
-    countdown()
-  }, 1000)
-}
 
 buttonPlay.addEventListener('click', function () {
   buttonPlay.classList.add('hide')
