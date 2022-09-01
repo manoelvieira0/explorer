@@ -7,7 +7,7 @@ export class Favorites {
     this.load()
   }
 
-  load(){
+  load() {
     this.entries = [
       {
         login: 'diego3g',
@@ -23,6 +23,13 @@ export class Favorites {
       }
     ]
   }
+
+  delete(user) {
+    const filteredEntries = this.entries.filter((entry) =>
+      entry.login !== user.login)
+
+    console.log(filteredEntries)
+  }
 }
 
 export class FavoritesView extends Favorites {
@@ -37,13 +44,20 @@ export class FavoritesView extends Favorites {
 
     this.entries.forEach((user) => {
       const row = this.createRow()
-      
+
       row.querySelector('.user img').src = `https://github.com/${user.login}.png`
       row.querySelector('.user img').alt = `Imagem de ${user.name}`
       row.querySelector('.user p').textContent = user.name
       row.querySelector('.user span').textContent = user.login
       row.querySelector('.repositories').textContent = user.public_repos
       row.querySelector('.followers').textContent = user.followers
+
+      row.querySelector('.remove').onclick = () => {
+        const isOk = confirm('Tem certeza que deseja deletar este GitHub?')
+        if (isOk) {
+          this.delete(user)
+        }
+      }
       this.tbody.append(row)
     })
   }
