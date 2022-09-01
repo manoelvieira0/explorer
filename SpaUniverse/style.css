@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(./images/universe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+header img {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 3.2rem;
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 4rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+} 
+
+.home {
+  display: grid;
+  height: 50vh;
+  place-content: center;
+  padding-top: 5rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.center h1 {
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 2.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.center button {
+  background-color: transparent;
+  border: 1.6px solid white;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 0.7rem;
+  color: white;
+  transition: 1s;
+}
+
+.center button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
