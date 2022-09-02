@@ -20,12 +20,15 @@ export class Favorites {
     this.tbody = this.root.querySelector('table tbody')
 
     this.load()
-
-    GitHubUser.search('manoelvieira0').then(user => console.log(user))
   }
 
   load() {
     this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+  }
+
+  async add(username) {
+    const user = await GitHubUser.search(username)
+    console.log(user)
   }
 
   delete(user) {
@@ -42,6 +45,15 @@ export class FavoritesView extends Favorites {
     super(root)
 
     this.update()
+    this.onAdd()
+  }
+
+  onAdd() {
+    const addButton = document.querySelector('.search button')
+    addButton.onclick = () => {
+      const { value } = this.root.querySelector('.search input')
+      this.add(value)
+    }
   }
 
   update() {
