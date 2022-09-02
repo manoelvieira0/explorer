@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitFav</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./js/main.js" type="module" defer></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <header>
+      <h1>{&star;} GitFav</h1>
+      <div class="search">
+        <label for="input-search" class="sr-only">Digite o GitHub que você quer favoritar</label>
+        <input id="input-search" type="text" placeholder="Digite o GitHub que você quer favoritar">
+        <button>&star; Favoritar</button>
+      </div>
+    </header>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>Repositórios</th>
+          <th>Seguidores</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="user">
+            <img src="https://github.com/manoelvieira0.png" alt="Imagem de Diego Fernandes">
+            <a href="https://github.com/manoelvieira0" target="blank">
+              <p>Manoel Vieira</p>
+              <span>manoelvieira0</span>
+            </a>
+          </td>
+          <td class="repositories">
+            23
+          </td>
+          <td class="followers">
+            14
+          </td>
+          <td>
+            <button class="remove">Remover</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="user">
+            <img src="https://github.com/manoelvieira0.png" alt="Imagem de Diego Fernandes">
+            <a href="https://github.com/manoelvieira0" target="blank">
+              <p>Manoel Vieira</p>
+              <span>manoelvieira0</span>
+            </a>
+          </td>
+          <td class="repositories">
+            23
+          </td>
+          <td class="followers">
+            14
+          </td>
+          <td>
+            <button class="remove">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+</body>
+
+</html>

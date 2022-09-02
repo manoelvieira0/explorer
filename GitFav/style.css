@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto Slab', serif;
+
+  background-color: rgb(0, 0, 0);
+}
+
+button,
+input {
+  font-family: 'Roboto Slab', serif;
+}
+
+#app {
+  max-width: 75%;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 7rem;
+}
+
+header h1 {
+  color: rgb(240, 240, 240);
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.search {
+  display: flex;
+}
+
+header input {
+  width: 32rem;
+  text-align: left;
+  padding: 1rem 0 1rem 0.8rem;
+
+  color: rgba(225, 225, 225);
+  background-color: rgb(6, 24, 28);
+
+  border: none;
+}
+
+header input:focus {
+  outline: none;
+}
+
+header button {
+  padding: 1rem 3.6rem;
+  background-color: rgb(6, 94, 124);
+
+  color: rgb(240, 240, 240);
+  transition: 100ms;
+}
+
+header button:hover {
+  padding: 1rem 3.6rem;
+  background-color: rgb(6, 68, 88);
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  margin-bottom: 6rem;
+}
+
+table * {
+  font-size: 1.5rem;
+  color: rgb(240, 240, 240);
+}
+
+table th {
+  background-color: rgb(9, 45, 56);
+  text-align: left;
+  padding: 1.6rem;
+}
+
+table th:first-child {
+  border-radius: 0.6rem 0 0 0;
+}
+
+table th:last-child {
+  border-radius: 0 0.6rem 0 0;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgb(3, 11, 13);
+}
+
+table tr {
+  background-color: rgb(6, 24, 28);
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user p {
+  margin-bottom: 0.1rem;
+}
+
+td.user span {
+  color: rgba(210, 210, 210);
+}
+
+td .remove {
+  background-color: transparent;
+  border: none;
+  color: rgb(252, 61, 61);
+
+  cursor: pointer;
+}
