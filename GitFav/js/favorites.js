@@ -1,3 +1,5 @@
+import { GitHubUser } from "./GitHubUser.js"
+
 export class Favorites {
   constructor(root) {
     this.root = document.querySelector(root)
@@ -7,28 +9,43 @@ export class Favorites {
     this.load()
   }
 
-  load(){
-    this.users = [
-      {
-        login: 'manoelvieira0',
-        name: 'Manoel Vieira',
-        public_repos: '23',
-        followers: '1956',
-      },
-      {
-        login: 'diego3g',
-        name: 'Diego Fernandes',
-        public_repos: '76',
-        followers: '12864',
-      }
-    ]
+  load() {
+    this.users = JSON.parse(localStorage.getItem('@github-favorites:')) || []
   }
 
-  delete(user){
-    const filteredEntries = this.users.filter(entry => 
+  delete(user) {
+    const filteredEntries = this.users.filter(entry =>
       entry.login !== user.login)
 
-      console.log(filteredEntries)
+    this.users = filteredEntries
+    this.update()
+    this.save()
+  }
+
+  async add(username){
+    try{
+      const userExists = this.users.find(user => user.login == username)
+
+      if(userExists){
+        throw new Error('Usuário já cadastrado!')
+      }
+
+      const user = await GitHubUser.search(username)
+
+      if(user.login === undefined){
+        throw new Error('Usuário não encontrado!')
+      }
+
+      this.users = [...this.users, user]
+      this.update()
+      this.save()
+    } catch(error) {
+      alert(error.message)
+    }
+  }
+
+  save(){
+    localStorage.setItem('@github-favorites:', JSON.stringify(this.users))
   }
 }
 
@@ -38,6 +55,16 @@ export class FavoritesView extends Favorites {
 
     this.update()
     this.load()
+    this.onadd()
+  }
+
+  onadd() {
+    const addButton = document.querySelector('.search button')
+    addButton.onclick = () => {
+      const {value} = this.root.querySelector('.search input')
+
+      this.add(value)
+    }
   }
 
   update() {
@@ -45,7 +72,7 @@ export class FavoritesView extends Favorites {
 
     this.users.forEach((user) => {
       const row = this.createRow()
-      
+
       row.querySelector('.user img').src = `https://github.com/${user.login}.png`
       row.querySelector('.user img').alt = `Imagem de ${user.name}`
       row.querySelector('.user p').textContent = user.name
@@ -56,14 +83,14 @@ export class FavoritesView extends Favorites {
 
       row.querySelector('.remove').onclick = () => {
         const isOk = confirm('Tem certeza que deseja deletar este github?')
-        if(isOk){
+        if (isOk) {
           this.delete(user)
         }
       }
       this.tbody.append(row)
     })
 
-    
+
   }
 
   createRow() {
