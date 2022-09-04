@@ -151,7 +151,7 @@ td.user span {
 td .remove {
   background-color: transparent;
   border: none;
-  color: rgb(252, 61, 61);
+  color: rgb(255, 65, 65);
 
   cursor: pointer;
 }
