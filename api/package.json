@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API desenvolvida no programa Explorer da Rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manoel Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
