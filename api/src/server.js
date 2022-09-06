@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.post("/users", (request, response) => {
   const {name, email, password} = request.body
-  response.send(`Usuário: ${name} - Email: ${email} - Senha: ${password}`)
+  response.json({name, email, password})
 })
 
 const PORT = 3333
