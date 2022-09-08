@@ -1,0 +1,35 @@
+.home {
+  display: grid;
+  height: 50vh;
+  place-content: center;
+  padding-top: 5rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.center h1 {
+  color: red;
+  letter-spacing: 0.1rem;
+  font-size: 2.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.center button {
+  background-color: transparent;
+  border: 1.6px solid white;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 0.7rem;
+  color: white;
+  transition: 1s;
+}
+
+.center button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
