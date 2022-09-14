@@ -8,7 +8,7 @@ export const Container = styled.section`
     border-bottom-style: solid;
     border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
 
-    padding: 16px;
+    padding-bottom: 16px;
     margin-bottom: 24px;
 
     color: ${({theme}) => theme.COLORS.GRAY_100};

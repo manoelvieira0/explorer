@@ -5,7 +5,6 @@ export const Container = styled.header`
 
   height: 105px;
   width: 100%;
-
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
