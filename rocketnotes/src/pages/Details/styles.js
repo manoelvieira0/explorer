@@ -49,6 +49,7 @@ export const Content = styled.div`
   > p {
     font-size: 16px;
     margin-top: 16px;
+    margin-bottom: 16px;
     text-align: justify;
   }
 `
