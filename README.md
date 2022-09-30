@@ -194,3 +194,92 @@ Durante o Stage foi realizado o projeto GitHub Favorites, onde foi demonstrado c
 
 Após, realizei o projeto GitFav com o mesmo objetivo do projeto anterior. 
 ![gitfav](https://user-images.githubusercontent.com/76048368/188325399-d295d3a2-20ef-47cc-a602-c0a7b93e9be5.png)
+
+## 💻 Stage 7 - Git e GitHub
+
+Obtive diversos aprendizados durante esse Stage:
+- O que é o Git;
+- O que é controle de versão;
+- Comando git log;
+- Comando git status;
+- O que é o HEAD no Git;
+- Comando git diff;
+- Comando git restore;
+- Comando git —amend;
+- Utilizar o Source Control do VS Code;
+- O que é o Github;
+- Criar conta no Github;
+- Editar perfil público;
+- Criar repositórios;
+- Fazer push das alterações;
+- Utilização dos arquivos .gitignore e .gitkeep;
+- Visualizar histórico de modificações;
+- Utilizar o comando git clone;
+- Utilizar o comando git pull;
+- Mudar a visibilidade do repositório;
+- Criar e customizar o README;
+
+## 💻 Stage 8 - Backend
+
+Obtive diversos aprendizados durante esse Stage:
+- O que é API;
+- O que é o Node.js;
+- Onde podemos utilizar o Node.js;
+- Vantagens do Node.js;
+- O que é a v8 Engine;
+- Como funciona o Node.js;
+- Iniciar um projeto Node.js;
+- Adicionar Express no projeto;
+- O que é a pasta `node_modules`;
+- Rotas;
+- Métodos HTTP;
+- Route Params;
+- Query Params;
+- Instação e utilização do `nodemon`;
+- Instalação e utilização do `Insomnia`;
+- Body Params;
+- Controller;
+- HTTP Status Codes;
+- Middleware;
+- Lidar com erros na API;
+- O que é um banco de dados;
+- Como conectar um banco de dados SQLite;
+- Utilização da ferramenta Beekeper Studio;
+- Comandos DML;
+- Comandos DDL;
+- Migrations;
+- Fazer consultas no SQL;
+- Criptografar senhas no banco de dados;
+- Validações no back-end;
+- SQL Query Builder;
+- Instalar Knex/js;
+- Configurar Knex.js;
+- NPM vs NPX;
+- Primary Key;
+- Foreign Key;
+- Cardinalidade;
+- Inner Join;
+- Map e Filter;
+
+## 💻 Stage 9 - Frontend
+
+![newnote](https://user-images.githubusercontent.com/76048368/193279706-effd1be5-2e1e-41e1-875e-b06ea5616db0.png)
+![profile](https://user-images.githubusercontent.com/76048368/193279714-778639f6-43bf-41d0-bd4d-2f46d43e9d11.png)
+![signin](https://user-images.githubusercontent.com/76048368/193279716-c4e9aaf8-8407-4134-9993-b0c8f478a2d0.png)
+![signup](https://user-images.githubusercontent.com/76048368/193279723-017bf27c-51f5-4ef6-ba73-c8b5b1e05b36.png)
+![home](https://user-images.githubusercontent.com/76048368/193279726-53f10c0d-6185-4e7b-9e7e-3857035fa5b5.png)
+
+Obtive diversos aprendizados durante esse Stage:
+
+- O que é ReactJS;
+- Utilização do Vite;
+- Estruturar pastas e arquivos no ReactJS;
+- Executar um projeto ReactJS;
+- Fragment;
+- styled-components;
+- Adicionar fontes personalizadas;
+- Components;
+- Props;
+- Rotas;
+- Navegação;
+
