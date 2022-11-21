@@ -2,14 +2,9 @@ const express = require("express") // Importando o express
 
 const app = express() // Inicializando o express
 
-app.get("/users/:id/:user", (request, response) => { // Route Params
-  const { id, user } = request.params
-  response.send(`Id da mensagem: ${id}, para o usuário: ${user}`)
-})
+app.post("/users", (request, response) => { // Query Params
 
-app.get("/users", (request, response) => { // Query Params
-  const { page, limit } = request.query
-  response.send(`Página: ${page}. Mostrar: ${limit}`)
+  response.send("Você chamou o POST")
 })
 
 const PORT = 3000 // Constante com o endereço da porta
