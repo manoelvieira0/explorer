@@ -21,7 +21,7 @@ app.use((error, request, response, next) => {
       status: "error",
       message: error.message
     })
-  }
+  } /* */
 
   console.error(error)
 
