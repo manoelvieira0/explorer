@@ -1,6 +1,6 @@
 require('express-async-errors')
 
-const database = require("./database/sqlite")
+const migrationsRun = require("./database/sqlite/migrations")
 
 const AppError = require("../src/utils/AppError")
 
@@ -8,12 +8,12 @@ const express = require("express") // Importando o express
 
 const routes = require("./routes") // Importe das rotas
 
+migrationsRun()
+
 const app = express() // Inicializando o express
 app.use(express.json()) // Informar que utilizaremos o formato JSON
 
 app.use(routes) // Usar as rotas
-
-database()
 
 app.use((error, request, response, next) => {
   if(error instanceof AppError){
@@ -21,7 +21,7 @@ app.use((error, request, response, next) => {
       status: "error",
       message: error.message
     })
-  }
+  } 
 
   console.error(error)
 
