@@ -7,11 +7,11 @@ module.exports = {
       filename: path.resolve(__dirname, "src", "database", "database.db")
     },
     pool: {
-      afterCreate: (conn, cb) => conn.run("PRAGMA foreing_keys = ON", cb) // Quando deletar algo em cascata, funcionar.
+      afterCreate: (conn, cb) => conn.run("PRAGMA foreign_keys = ON", cb) // Quando deletar algo em cascata, funcionar.
     }, // Será executado no momento da conexão com o banco de dados
-    useNullAsDefault: true,
     migrations: {
       directory: path.resolve(__dirname, "src", "database", "knex", "migrations")
-    }
+    },
+    useNullAsDefault: true
   },
 };
