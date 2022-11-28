@@ -63,7 +63,17 @@ class NotesController {
     if (tags) {
       const filterTags = tags.split(',').map(tag => tag)
       
-      notes = await knex('tags').whereIn("name", filterTags) // Coluna da tabela tags com o filtro para indicar se a tag está ou não.
+      notes = await knex('tags')
+      .select([
+        "notes.id",
+        "notes.title",
+        "notes.user_id"
+      ])
+      .where("notes.user_id", user_id)
+      .whereLike("notes.title", `%${title}%`)
+      .whereIn("name", filterTags) // Coluna da tabela tags com o filtro para indicar se a tag está ou não.
+      .innerJoin("notes", "notes.id", "tags.note_id")
+      .orderBy("notes.title")
 
     } else {
       notes = await knex("notes")
