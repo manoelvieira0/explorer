@@ -56,14 +56,23 @@ class NotesController {
   }
 
   async index(request, response) {
-    const { title, user_id } = request.query
+    const { title, user_id, tags } = request.query
 
-    const notes = await knex("notes")
-      .where({ user_id })
-      .whereLike("title", `%${title}%`) // Para consultar valores dentro de um conteúdo.
-      .orderBy("title")
+    let notes;
 
-      return response.json(notes)
+    if (tags) {
+      const filterTags = tags.split(',').map(tag => tag)
+      
+      notes = await knex('tags').whereIn("name", filterTags) // Coluna da tabela tags com o filtro para indicar se a tag está ou não.
+
+    } else {
+      notes = await knex("notes")
+        .where({ user_id })
+        .whereLike("title", `%${title}%`) // Para consultar valores dentro de um conteúdo.
+        .orderBy("title")
+    }
+
+    return response.json(notes)
   }
 }
 
