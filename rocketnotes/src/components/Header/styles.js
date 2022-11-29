@@ -14,6 +14,32 @@ export const Container = styled.header`
   justify-content: space-between; // Na horizontal os elementos fiquem cada um em uma extremidade.
 
   padding: 0 80px;
+`;
 
-  background-color: red;
+export const Profile = styled.div`
+  display: flex;
+  align-items: center;
+
+  > img { // Sinal de maior para garantir a estilização da imagem dentro do profile
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    line-height: 24px;
+
+    span {
+      font-size: 14px;
+      color: ${({theme}) => theme.COLORS.GRAY_100};
+    }
+
+    strong {
+      font-size: 18px;
+      color: ${({theme}) => theme.COLORS.WHITE};
+    }
+  }
 `;
