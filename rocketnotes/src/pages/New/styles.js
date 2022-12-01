@@ -10,6 +10,17 @@ export const Container = styled.div`
   "header"
   "content"
   ;
+
+  > main {
+    grid-area: content;
+    overflow-y: auto;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; // Para quando não caber mais, ir para outra linha
+  }
 `;
 
 export const Form = styled.form`
