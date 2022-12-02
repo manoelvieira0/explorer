@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
 
 export const Container = styled.header`
   grid-area: header; // Para o cabeçalho ficar fixo
@@ -8,7 +9,7 @@ export const Container = styled.header`
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
+  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   display: flex;
   justify-content: space-between; // Na horizontal os elementos fiquem cada um em uma extremidade.
@@ -16,7 +17,7 @@ export const Container = styled.header`
   padding: 0 80px;
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
   display: flex;
   align-items: center;
 
@@ -34,12 +35,12 @@ export const Profile = styled.div`
 
     span {
       font-size: 14px;
-      color: ${({theme}) => theme.COLORS.GRAY_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
     strong {
       font-size: 18px;
-      color: ${({theme}) => theme.COLORS.WHITE};
+      color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
 `;
@@ -49,7 +50,7 @@ export const Logout = styled.button`
   background: none;
 
   > svg {
-    color: ${({theme}) => theme.COLORS.GRAY_100};
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
     font-size: 24px;
   }
 `;
