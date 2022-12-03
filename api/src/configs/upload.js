@@ -1,9 +1,9 @@
-const { path } = require('path')
+const path = require('path')
 const multer = require('multer')
 const crypto = require('crypto')
 
 const TMP_FOLDER = path.resolve(__dirname, "..", "..", "tmp")//  Pasta temporária
-const UPLOADS_FOLDER = path.resolve(__dirname, "uploads") // Pasta de Uploads
+const UPLOADS_FOLDER = path.resolve(TMP_FOLDER, "uploads") // Pasta de Uploads
 
 const MULTER = { //  Biblioteca para realizar uploads
   storage: multer.diskStorage({
