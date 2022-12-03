@@ -5,10 +5,10 @@ const crypto = require('crypto')
 const TMP_FOLDER = path.resolve(__dirname, "..", "..", "tmp")//  Pasta temporária
 const UPLOADS_FOLDER = path.resolve(__dirname, "uploads") // Pasta de Uploads
 
-const MULTER = {
+const MULTER = { //  Biblioteca para realizar uploads
   storage: multer.diskStorage({
     destination: TMP_FOLDER, // Para indicar o destino
-    filename(request, file, callback) {
+    filename(request, file, callback) { // Passar qual o nome do arquivo
       const fileHash = crypto.randomBytes(10).toString("hex") // Para criar um hash de forma aleatório, para evitar nomes iguais
       const fileName = `${fileHash}-${file.originalname}`
 
