@@ -8,16 +8,15 @@ const usersRoutes = Router()
 const upload = multer(uploadConfig.MULTER)
 
 const UsersController = require("../controllers/UsersController")
+const UserAvatarController = require("../controllers/UserAvatarController")
 
 const ensureAuthenticated = require('../middlewares/ensureAuthenticated')
 
 const usersController = new UsersController()
+const userAvatarController = new UserAvatarController()
 
 usersRoutes.post("/", usersController.create)
 usersRoutes.put("/", ensureAuthenticated, usersController.update)
-usersRoutes.patch("/avatar", ensureAuthenticated, upload.single("avatar"), (request, response) => {
-  console.log(request.file.filename)
-  response.json()
-}) // Para atualizar um campo específico
+usersRoutes.patch("/avatar", ensureAuthenticated, upload.single("avatar"), userAvatarController.update) // Para atualizar um campo específico
 
 module.exports = usersRoutes
