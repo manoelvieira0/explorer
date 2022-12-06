@@ -15,7 +15,7 @@ const routes = require("./routes") // Importe das rotas
 migrationsRun()
 
 const app = express() // Inicializando o express
-app.use(cors())
+app.use(cors());
 app.use(express.json()) // Informar que utilizaremos o formato JSON
 
 app.use("/files", express.static(uploadConfig.UPLOADS_FOLDER))
