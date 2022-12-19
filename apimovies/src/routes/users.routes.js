@@ -1,11 +1,11 @@
 const { Router } = require('express') // Importação do Router
 
+const UsersController = require('../controllers/usersController') // Importando o Users Controller
+
 const usersRoutes = Router() // Criando a rota dos usuários
 
-usersRoutes.post("/", (request, response) => { // POST
-  const {name, email, password} = request.body // Para pegar informações do corpo da requisição
+const usersController = new UsersController() // Instanciando 
 
-  response.json({name, email, password}) // Utilizando o padrão JSON para obter
-})
+usersRoutes.post("/", usersController.create) // Pssando a responsabilidade para o método create dentro do usersController
 
 module.exports = usersRoutes // Exportando
