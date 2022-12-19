@@ -10,7 +10,7 @@ class UsersController {
   create(request, response) {
     const { name, email, password } = request.body // Para pegar informações do corpo da requisição
 
-    response.json({ name, email, password }) // Utilizando o padrão JSON para obter
+    response.status(201).json({ name, email, password }) // Utilizando o padrão JSON para obter
   }
 }
 
