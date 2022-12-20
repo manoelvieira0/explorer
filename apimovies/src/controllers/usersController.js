@@ -48,7 +48,7 @@ class UsersController {
     if (password && old_password) {
       const checkOldPassword = await compare(old_password, user.password)// Para verificar se a senha antiga é igual
 
-      if(!checkOldPassword){
+      if (!checkOldPassword) {
         throw new AppError("A senha antiga não confere.")
       }
 
@@ -60,9 +60,10 @@ class UsersController {
     name = ?,
     email = ?,
     password = ?,
-    updated_at = ?
+    updated_at = DATETIME('NOW')
     WHERE id = ?
-    `, [user.name, user.email, user.password, new Date(), id]);
+    `, [user.name, user.email, user.password, id]
+    );
     return response.json()
   }
 }
