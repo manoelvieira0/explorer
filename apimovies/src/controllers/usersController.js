@@ -1,4 +1,5 @@
 const AppError = require('../utils/AppError')
+const { hash } = require('bcryptjs') // Função para gerar a criptografia
 
 const sqliteConnection = require('../database/sqlite') // Importe da conexão com o banco de dados
 
@@ -14,8 +15,9 @@ class UsersController {
       throw new AppError("Esta E-mail já está em uso.")
     }
 
-    await database.run("INSERT INTO users (name, email, password) VALUES (?, ?, ?)", [name, email, password]) // Para inserir na tabela 
+    const hashedPassword = await hash(password, 8) // Variável com a senha criptografada (await para aguardar a promisse)
 
+    await database.run("INSERT INTO users (name, email, password) VALUES (?, ?, ?)", [name, email, hashedPassword]) // Para inserir na tabela 
     return response.status(201).json()
   }
 }
