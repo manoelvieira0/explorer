@@ -29,10 +29,18 @@ class NotesController {
     const { id } = request.params
 
     const note = await knex("notes").where({ id }).first() // Selecionar a nota de acordo com o ID
+    const tags = await knex("tags").where({ note_id: id }).orderBy("name") //  Listando as tags da nota do id em ordem alfabética
 
     return response.json({
-      note
+      ...note,
+      tags
     })
+  }
+
+  async delete(request, response) {
+    const { id } = request.params
+    await knex("notes").where({ id }).delete()
+    return response.json()
   }
 }
 

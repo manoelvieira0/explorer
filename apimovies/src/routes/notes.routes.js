@@ -8,5 +8,6 @@ const notesController = new NotesController() // Instanciando
 
 notesRoutes.post("/:user_id", notesController.create) // Passando a responsabilidade para o método create dentro do notesController
 notesRoutes.get("/:id", notesController.show)
+notesRoutes.delete("/:id", notesController.delete)
 
 module.exports = notesRoutes // Exportando
