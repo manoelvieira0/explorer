@@ -19,10 +19,20 @@ class NotesController {
         user_id
       }
     })
-    
+
     await knex("tags").insert(tagsInsert) // Inserindo as Tags
 
     response.json()
+  }
+
+  async show(request, response) {
+    const { id } = request.params
+
+    const note = await knex("notes").where({ id }).first() // Selecionar a nota de acordo com o ID
+
+    return response.json({
+      note
+    })
   }
 }
 
