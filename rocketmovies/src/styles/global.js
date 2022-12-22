@@ -8,7 +8,7 @@ export default createGlobalStyle` // Para utilizar o style global
   }
 
   body {
-    background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
     color: ${({theme}) => theme.COLORS.WHITE};
 
     -webkit-font-smoothing: antialiased; // Para deixar a fonte melhor

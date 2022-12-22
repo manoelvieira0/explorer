@@ -1,4 +1,4 @@
-import { Container, Profile } from "./styles";
+import { Container, Profile, Logout } from "./styles";
 
 export function Header() {
   return (
@@ -7,7 +7,7 @@ export function Header() {
       <Profile>
         <div>
           <strong>Manoel Vieira</strong>
-          <span>Sair</span>
+          <Logout>Sair</Logout>
         </div>
         <img src="https://github.com/manoelvieira0.png" alt="Foto do usuário" />
       </Profile>
